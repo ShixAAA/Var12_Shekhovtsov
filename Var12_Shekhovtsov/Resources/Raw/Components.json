@@ -1,0 +1,58 @@
+[
+{
+    	"Id": 1,
+    	"Name": "GIGABYTE H310M H (rev. 1.1)",
+    	"Description": "Материнская плата GIGABYTE H310M H (rev. 1.1) совместима с широчайшим образом распространенными процессорами Intel LGA 1151-v2. Максимальный объем памяти (32 ГБ) достаточен для решения большинства стандартных задач.",
+    	"TypeOfComponent": "Motherboard",
+    	"Image": "GIGABYTE_H310MH.png",
+    	"Cost": 2799
+  },
+  {
+    	"Id": 2,
+    	"Name": "GIGABYTE B365 M AORUS ELITE",
+    	"Description": "Intel B365 AORUS motherboard with RGB Fusion 2.0 with Digital LEDs, Intel GbE LAN with cFosSpeed, Dual M.2 slots, Ultra Durable PCIe Armor, Anti-Sulfur Resistor, Smart Fan 5, DualBIOS™, CEC 2019 ready",
+    	"TypeOfComponent": "Motherboard",
+    	"Image": "GIGABYTE_B365M.png",
+	"Cost": 8499
+  },
+  {
+	"Id": 3,
+    	"Name": "GIGABYTE Z390 AORUS ELITE",
+    	"Description": "LGA 1151-v2, Intel Z390, 4xDDR4-2666 МГц, 2xPCI-Ex16, 2xM.2, Standard-ATX",
+    	"TypeOfComponent": "Motherboard",
+    	"Image": "GIGABYTE_B365M.png",
+	"Cost": 8499	
+  },
+  {
+	"Id": 4,
+	"Name": "GIGABYTE GeForce RTX 3070 Gaming OC 8G",
+	"Description": "PCI-E 4.0, ядро - 1500 МГц, Boost - 1815 МГц, память - 8 Гб GDDR6 14000 МГц, 256 бит, 2xHDMI, 2xDisplayPort, подсветка, Retail",
+	"TypeOfComponent": "GPU",
+	"Image": "GIGABYTE_GeForce_RTX_3070_Gaming.png",
+	"Cost": 57000
+  },
+  {
+	"Id": 5,
+    	"Name": "GTX 1070 GAMING X 8G",
+    	"Description": "Графический процессор — GeForce GTX 1070, Интерфейс — PCI Express 3.0 16x. Графический процессор: Частота графического процессора — 1607 МГц, Поддержка SLI/CrossFire — SLI. Память: Объем видеопамяти — 8 ГБ, Тип видеопамяти — GDDR5, Частота видеопамяти — 8008 МГц, Разрядность шины видеопамяти — 256 бит.",
+    	"TypeOfComponent": "GPU",
+    	"Image": "GTX_1070_GAMING.png",
+	"Cost": 18000
+  },
+  {
+	"Id": 6,
+	"Name": "GeForce GTX 650",
+	"Description": "Это десктопная видеокарта на архитектуре Kepler и техпроцессе 28 нм, в первую очередь рассчитанная на геймеров. На ней установлено 1 Гб памяти GDDR5 на частоте 5.0 Гб/с, и вкупе с 128-bit GDDR5 интерфейсом это создает пропускную способность 80.0 Гб/с.",
+	"TypeOfComponent": "GPU",
+	"Image": "GeForce_GTX_650.png",
+	"Cost": 12000
+  },
+  {
+	"Id": 7,
+	"Name": "Deepcool Smarter",
+	"Description": "DeepCool Smarter Black представляет собой компактный и современный корпус для вашего компьютера. Стильный и элегантный дизайн прекрасно впишется в любой интерьер, и займет совсем немного рабочего пространства.",
+	"TypeOfComponent": "Case",
+	"Image": "DeepcoolSmarter.png",
+	"Cost": 2506
+  }
+]
