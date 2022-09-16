@@ -2,43 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Var12_Shekhovtsov.MainPage">
-
-    <StackLayout>
-        <Grid ColumnDefinitions="*,*">
-            <ScrollView Grid.Column="0">
-                <CollectionView ItemsSource="{Binding Components}"
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text = "Добавить"
+                     Order = "Secondary"
+                     Priority = "0"
+                     Command = "{Binding AddItemCommand}"/>
+    </ContentPage.ToolbarItems>
+        
+                <Grid ColumnDefinitions="*,*">
+        <ScrollView Grid.Column="0">
+  
+            <CollectionView ItemsSource="{Binding Components}"
                                 SelectedItem="{Binding SelectedItem}"
                                 SelectionMode="Single">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid RowSpacing="10"
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid RowSpacing="10"
                                   VerticalOptions="Center">
-                                <Frame BorderColor="BlueViolet"
+                            <Frame BorderColor="BlueViolet"
                                        CornerRadius="2"
                                        HasShadow="True"
                                        VerticalOptions="Center"
                                        Margin="7">
-                                    <StackLayout Spacing="10"
+                                <StackLayout Spacing="10"
                                                  Orientation="Horizontal"
                                                  Margin="0">
-                                        <Grid ColumnDefinitions="100,*,*"
+                                    <Grid ColumnDefinitions="100,*,*"
                                               ColumnSpacing="2">
-                                            <Frame CornerRadius="4"
+                                        <Frame CornerRadius="4"
                                                    HeightRequest="50"
                                                    WidthRequest="50"
                                                    Padding="0"
                                                    HorizontalOptions="Start">
-                                                <Image Source="{Binding Image}"
+                                            <Image Source="{Binding Image}"
                                                        Grid.Column="0"
                                                        HeightRequest="50"
                                                        WidthRequest="50"
                                                        />
-                                            </Frame>
-                                            <Label Text="{Binding Name}"
+                                        </Frame>
+                                        <Label Text="{Binding Name}"
                                                    FontSize="20" 
                                                    Grid.Column="1"
                                                    VerticalOptions="Center"/>
-                                            <Frame BackgroundColor="BlueViolet"
+                                        <Frame BackgroundColor="BlueViolet"
                                                    CornerRadius="3"
                                                    HeightRequest="30"
                                                    WidthRequest="300"
@@ -46,27 +52,26 @@
                                                    Padding="0"
                                                    Margin="0,-7,0,0"
                                                    Grid.Column="2">
-                                                <Label Text="{Binding TypeOfComponent}"
+                                            <Label Text="{Binding TypeOfComponent}"
                                                        TextColor="White"
                                                        FontSize="14"
                                                        HorizontalOptions="Center"
                                                        VerticalOptions="Center"
                                                        Padding="9,0,7,4" />
-                                            </Frame>
-                                        </Grid>
-                                    </StackLayout>
-                                </Frame>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ScrollView>
-            <ScrollView Grid.Column="1">
-                <Label Text="{Binding Desc}"
+                                        </Frame>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+        <ScrollView Grid.Column="1">
+            <Label Text="{Binding Desc}"
                        FontSize="20"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"/>
-            </ScrollView>
-        </Grid>
-    </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
