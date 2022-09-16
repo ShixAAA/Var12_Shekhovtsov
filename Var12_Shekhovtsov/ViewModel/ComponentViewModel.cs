@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Var12_Shekhovtsov.Model;
 using Var12_Shekhovtsov.Services;
 
@@ -46,6 +47,17 @@ namespace Var12_Shekhovtsov.ViewModel
                 // в реальном времени
                 OnPropertyChanged(nameof(Desc));
             }
+        }
+        public ICommand AddItemCommand => new Command(() => AddNewItem());
+        private void AddNewItem()
+        {
+            Components.Add(new Component
+            {
+                Id = Components.Count + 1,
+                Name = "Title " + Components.Count,
+                Description = "Description",
+                TypeOfComponent = "country"
+            });
         }
 
         // Метод получения коллекции объектов
